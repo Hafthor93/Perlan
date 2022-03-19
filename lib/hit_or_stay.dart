@@ -1,5 +1,7 @@
 import 'dart:io';
 
+import 'package:BlackJack/functions/draw_card.dart';
+
 import 'functions/status.dart';
 import 'functions/card_namer.dart';
 import 'functions/deal_card.dart';
@@ -32,6 +34,7 @@ void HitOrStay(List<int> playerHand, List<int> houseHand, List<int> deck){
 
   while(active == true) {
     if (choice == 1) {
+      DrawCard(playerHand, deck);
       DealCard(deck);
       playerHand.add(DealCard(deck));
       print('You drew ${CardNamer(DealCard(deck))}');
