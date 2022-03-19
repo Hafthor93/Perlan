@@ -9,6 +9,17 @@ that has no input and simply prints a text.
 */
 
 void Welcome(){
+
+  print("  ___________                                       ");
+  print(" /           \\                                     ");
+  print(" | A       A |                                      ");
+  print(" | ♠         |                                      ");
+  print(" |           |                                      ");
+  print(" |     ♠     |     Welcome to the Black Pearl!      ");
+  print(" |           |                                      ");
+  print(" |         ♠ |                                      ");
+  print(" | A       A |                                      ");
+  print(" \\___________/                                     ");
   print("  ____  _            _     _            _     ");
   print(" | __ )| | __ _  ___| | __(_) __ _  ___| | __ ");
   print(" |  _ \\| |/ _` |/ __| |/ /| |/ _` |/ __| |/ / ");
