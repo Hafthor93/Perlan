@@ -33,6 +33,7 @@ void HitOrStay(List<int> playerHand, List<int> houseHand, List<int> deck){
   while(active == true) {
     if (choice == 1) {
       DealCard(deck);
+      playerHand.add(DealCard(deck));
       print('You drew ${CardNamer(DealCard(deck))}');
       Status(playerHand, houseHand);
       if(CheckIfBusted(playerHand) == true)
