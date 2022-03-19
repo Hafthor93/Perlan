@@ -20,12 +20,7 @@ that the function will simply ask the user again to input an answer?
 
 int OptionSelect(String statement, List<String> options){
 
-  while(){
-    print(statement);
-    for(int i = 0; i < options.length; i++){
 
-    }
-  }
 
 }
 

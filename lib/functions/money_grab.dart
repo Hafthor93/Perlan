@@ -21,43 +21,54 @@ he doesn't input a integer?
 int PlaceBet(int bankRoll){
   int bet = 0;
 
-  while(true) {
+  while(true)
+    {
+      print('How much would you like to bet?');
+      bet = int.tryParse(stdin.readLineSync());
 
-    print('how much would you like to bet?');
-    bet = int.parse(stdin.readLineSync());
-
-    if (bet > bankRoll) {
-      print('You can not bet this much money');
-    }
-    else if (bet <= 0) {
-      print('You can not bet nothing');
-    }
-    else if(bet != int)
+      if(bet == null)
       {
         print('You have done something wrong');
       }
-    else
+      else if(bet > bankRoll)
+        {
+          print('You don\'t have that much money..');
+        }
+      else if(bet <= 0)
+        {
+          print('You can\'t bet nothing..');
+        }
+      else
       {
         break;
       }
-  }
-  return bet;
+
+    }
+    return bet;
+
 
 
 }
 
 int BuyIn(){
-  int buyIn = 0;
+
+  int buyInMoney = 0;
+
   while(true)
     {
       print('How much would you like to buy in for?');
-      buyIn = int.parse(stdin.readLineSync());
+      buyInMoney = int.tryParse(stdin.readLineSync());
 
-      if(buyIn != int)
+      if(buyInMoney == null)
         {
           print('You have done something wrong');
         }
+      else
+        {
+          break;
+        }
+
     }
-    return buyIn;
+    return buyInMoney;
 
 }

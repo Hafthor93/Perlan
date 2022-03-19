@@ -7,8 +7,7 @@ import 'package:BlackJack/lib.dart';
 
 void main() {
 
-
-  BuyIn();
+  PlaceBet(1000);
 
 
 
