@@ -10,6 +10,7 @@ void main() {
   Welcome();
   Shuffler(DeckOfCards());
   print(CardNamer());
+  CheckIfBusted(hand);
 
 
 }
