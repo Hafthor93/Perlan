@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'functions/status.dart';
 import 'functions/card_namer.dart';
 import 'functions/deal_card.dart';
@@ -22,5 +24,18 @@ If he busts after drawing this card, break the loop as well.
  */
 
 void HitOrStay(List<int> playerHand, List<int> houseHand, List<int> deck){
+
+  String choice = '';
+  while(true)
+    {
+      print('Would you like to "hit" or "stay"?');
+      choice = stdin.readLineSync();
+
+      if(choice.toLowerCase() == 'hit')
+        {
+
+        }
+
+    }
 
 }
