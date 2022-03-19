@@ -20,5 +20,18 @@ Example inputs
 
 
 bool CheckIfBusted(List<int> hand){
+  int sum = 0;
+  for(int num in hand){
+    sum += num;
+  }
+  if(sum > 21){
+    return true;
+  } else if (sum < 21){
+    return false;
+  }
+
+
+
+
 
 }
