@@ -30,14 +30,14 @@ void HitOrStay(List<int> playerHand, List<int> houseHand, List<int> deck){
   String statement = 'Would you like to hit or stay?\n';
   List<String> options = ['hit', 'stay'];
 
-  int choice = OptionSelect(statement, options);
 
   while(active == true) {
+    int choice = OptionSelect(statement, options);
     if (choice == 1) {
       DrawCard(playerHand, deck);
       DealCard(deck);
-      playerHand.add(DealCard(deck));
-      print('You drew ${CardNamer(DealCard(deck))}');
+      //playerHand.add(DealCard(deck));
+      //1print('You drew ${CardNamer(DealCard(deck))}');
       Status(playerHand, houseHand);
       if(CheckIfBusted(playerHand) == true)
         {
@@ -47,7 +47,7 @@ void HitOrStay(List<int> playerHand, List<int> houseHand, List<int> deck){
     }
     else if(choice ==2)
       {
-        active == false;
+        break;
       }
   }
 
