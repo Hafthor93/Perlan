@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'score_function.dart';
 import 'card_namer.dart';
 
@@ -15,6 +17,20 @@ hand before showdown.)
 
  */
 void Status(List<int> playerHand, List<int> houseHand){
+  List<String> samansettSpil = [];
+  List<String> samansettSpilDealer = [];
+  for(int cards in playerHand) {
+    CardNamer(cards);
+   samansettSpil.add(CardNamer(cards).toString());
+  }
+  print(samansettSpil.join(","));
+  print("Your score is ${CalculateScore(playerHand)}");
+  for(int cards in houseHand) {
+    samansettSpilDealer.add(CardNamer(cards).toString());
+  }
+  print(samansettSpilDealer.join(","));
+  print("Dealers score is ${CalculateScore(houseHand)}");
+
 
 
 
