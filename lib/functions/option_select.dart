@@ -22,7 +22,10 @@ int OptionSelect(String statement, List<String> options){
   int choice = 0;
   bool active = true;
   while(active == true) {
-    print(statement + options.join('\n'));
+    for(int i = 0; i <options.length; i++){
+      print('[${i+1}] ${options[i]}');
+    }
+
     choice = int.tryParse(stdin.readLineSync());
 
     if(choice == null || choice > 2 || choice <= 0)

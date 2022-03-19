@@ -25,17 +25,15 @@ If he busts after drawing this card, break the loop as well.
 
 void HitOrStay(List<int> playerHand, List<int> houseHand, List<int> deck){
 
-  String choice = '';
-  while(true)
+  String statement = 'Would you like to hit or stay?\n';
+  List<String> options = ['Press 1 to hit', 'Press 2 to stay'];
+
+  int choice = OptionSelect(statement, options);
+
+  if(choice == 1)
     {
-      print('Would you like to "hit" or "stay"?');
-      choice = stdin.readLineSync();
-
-      if(choice.toLowerCase() == 'hit')
-        {
-
-        }
-
+      DealCard(deck);
     }
+
 
 }
