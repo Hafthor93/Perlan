@@ -8,9 +8,10 @@ import 'package:BlackJack/lib.dart';
 void main() {
 
   Welcome();
-  Shuffler(DeckOfCards());
-  print(CardNamer());
-  CheckIfBusted(hand);
+  ShuffledDeck();
+  print(ShuffledDeck());
+
+
 
 
 }
