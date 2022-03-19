@@ -14,6 +14,8 @@ print(hand); // Should print []
 
 void ReturnHand(List<int> hand, List<int> deck){
 
+  deck.addAll(hand);
+  hand.clear();
 }
 
 /*
@@ -22,5 +24,9 @@ and returns both houseHand and playerHand into the deck.
  */
 
 void ReturnHands(List<int> playerHand, List<int> houseHand, List<int> deck){
+
+  ReturnHand(houseHand, deck);
+  ReturnHand(playerHand, deck);
+
 
 }
