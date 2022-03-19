@@ -7,10 +7,7 @@ import 'package:BlackJack/lib.dart';
 
 void main() {
 
-  String statement = 'Would you like to hit or stay?\n';
-  List<String> options = ['hit', 'stay'];
 
-  OptionSelect(statement, options);
 
 
 
