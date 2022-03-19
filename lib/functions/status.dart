@@ -32,6 +32,9 @@ void Status(List<int> playerHand, List<int> houseHand){
   print("Dealers score is ${CalculateScore(houseHand)}");
 
 
-
+for(int card in playerHand)
+  {
+    print('You have ${CardNamer(card)}');
+  }
 
 }
