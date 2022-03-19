@@ -25,5 +25,30 @@ gets the score 1. So if the method gets the hand [1, 1] the score would be 12
 
 
 int CalculateScore(List<int> hand){
+int sum = 0;
+int aces = 0;
+  for(int i = 0; i < hand.length; i++)
+    {
+
+      if (hand[i] <  10 && hand[i] > 1) {
+        sum += hand[i];
+
+      }
+      else if(hand[i] >=10 && hand[i] <= 13)
+        {
+          sum += 10;
+        }
+      else if(hand[i] == 1 && aces == 0)
+        {
+          sum += 11;
+          aces++;
+        }
+      else if(hand[i] == 1 && aces == 1)
+        {
+          sum += 1;
+        }
+
+    }
+  print(sum);
 
 }

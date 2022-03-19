@@ -7,10 +7,8 @@ import 'package:BlackJack/lib.dart';
 
 void main() {
 
-  Welcome();
-  ShuffledDeck();
-  print(ShuffledDeck());
 
+  CalculateScore([13,1]);
 
 
 
