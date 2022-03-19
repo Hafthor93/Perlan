@@ -31,7 +31,7 @@ int CheckWinner(List<int> playerHand, List<int> houseHand, int currentBankRoll, 
     currentBankRoll += win;
   }else if(playerScore > houseScore){
     print('You win! $win');
-    currentBankRoll += currentBet;
+    currentBankRoll += win;
   }else if(houseScore > playerScore) {
     print('House wins! Too bad!');
     currentBankRoll -= currentBet;

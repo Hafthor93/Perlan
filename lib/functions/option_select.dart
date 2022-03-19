@@ -29,9 +29,8 @@ int OptionSelect(String statement, List<String> options){
     }
     else
     {
-      active = false;
+      return choice;
     }
   }
-  return choice;
 
 }
