@@ -23,18 +23,16 @@ void Status(List<int> playerHand, List<int> houseHand){
     CardNamer(cards);
    samansettSpil.add(CardNamer(cards).toString());
   }
-  print(samansettSpil.join(","));
+  print("Player has ${samansettSpil.join(",")}");
   print("Your score is ${CalculateScore(playerHand)}");
   for(int cards in houseHand) {
     samansettSpilDealer.add(CardNamer(cards).toString());
   }
-  print(samansettSpilDealer.join(","));
-  print("Dealers score is ${CalculateScore(houseHand)}");
+  print("Dealer has ${samansettSpilDealer[0]} and one face down");
 
 
-for(int card in playerHand)
-  {
-    print('You have ${CardNamer(card)}');
-  }
+
+
+
 
 }
