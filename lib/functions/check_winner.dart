@@ -27,16 +27,18 @@ int CheckWinner(List<int> playerHand, List<int> houseHand, int currentBankRoll, 
 
   if(playerScore > 21){
     print('You busted! Too bad!');
+    currentBankRoll -= currentBet;
   }else if(houseScore > 21){
     print('House busted! Lucky you! You win $win');
-    return win;
+    currentBankRoll += win;
   }else if(playerScore > houseScore){
     print('You win! $win');
-    return win;
+    currentBankRoll -= currentBet;
   }else if(houseScore > playerScore) {
     print('House wins! Too bad!');
+    currentBankRoll -= currentBet;
   } else if(playerScore == houseScore){
     print('You tied!');
   }
-  print(currentBankRoll);
+  return currentBankRoll;
 }
