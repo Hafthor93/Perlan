@@ -49,6 +49,6 @@ int aces = 0;
         }
 
     }
-  print(sum);
+  return sum;
 
 }

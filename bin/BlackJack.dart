@@ -8,7 +8,7 @@ import 'package:BlackJack/lib.dart';
 void main() {
 
 
-  CalculateScore([13,1]);
+  BuyIn();
 
 
 
